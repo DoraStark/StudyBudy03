@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Study Buddy – Mein Profil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f9fafb;
+      font-family: system-ui, -apple-system, "Inter", Inter, sans-serif;
+    }
+    .sidebar {
+      min-height: 100vh;
+      background-color: #0f0f0f;
+    }
+    .sidebar a {
+      color: #ccc;
+      text-decoration: none;
+      padding: 0.75rem 1rem;
+      display: block;
+    }
+    .sidebar a:hover, .sidebar a.active {
+      background-color: #0D6EFD;
+      color: #fff;
+    }
+    .header {
+      background-color: #000;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header p-3">
+    <h1 class="h4 m-0">Study Buddy</h1>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-2 sidebar">
+        <a href="#" class="active">Über mich</a>
+        <a href="#">Themen</a>
+        <a href="#">Sprachen</a>
+        <a href="#">Lernpräferenzen</a>
+        <a href="#">Gefolgt</a>
+        <a href="#">Einstellungen</a>
+        <a href="#">Ausloggen</a>
+      </nav>
+
+      <!-- Main content -->
+      <main class="col-md-10 p-4">
+        <section class="mb-5">
+          <h2 class="d-flex justify-content-between align-items-center border-bottom pb-2">
+            Sprachen <a href="#" class="btn btn-sm btn-outline-primary">Edit</a>
+          </h2>
+          <p>🇩🇪 Deutsch (Deutsch)</p>
+          <p>🇬🇧 Englisch (English)</p>
+        </section>
+
+        <section class="mb-5">
+          <h2 class="d-flex justify-content-between align-items-center border-bottom pb-2">
+            Themen <a href="#" class="btn btn-sm btn-outline-primary">Edit</a>
+          </h2>
+          <p><strong>Ich möchte lernen:</strong> 🌍 Geografie, 🔭 Astronomy</p>
+          <p><strong>Ich kann beibringen:</strong> ➕ Mathe, 🎵 Musik</p>
+        </section>
+
+        <section>
+          <h2 class="d-flex justify-content-between align-items-center border-bottom pb-2">
+            Lernpräferenzen <a href="#" class="btn btn-sm btn-outline-primary">Edit</a>
+          </h2>
+
+          <div class="row g-3">
+            <div class="col-md-4">
+              <div class="p-3 bg-light border rounded">
+                <strong>Was ich erwarte?</strong><br>
+                Möchte gerne mehr über Klima und verschiedene Länder wissen und auch Saturn Bewegungen
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 bg-light border rounded">
+                <strong>Wie kann ich dir helfen?</strong><br>
+                Kann dir mit Mathe helfen, Geometrie und Algebra im Rahmen des Schulkurses und auch Musiktheorie
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="p-3 bg-light border rounded">
+                <strong>Was noch?</strong><br>
+                Ich wohne in Berlin (Prenzlauer Berg), habe Zeit mittwochs nachmittags, können uns treffen oder online – bin flexibel.
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-4">
+            <button class="btn btn-primary">Profil speichern</button>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>

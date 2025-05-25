@@ -1,0 +1,45 @@
+
+  <h2 class="mb-4">Mein Profil</h2>
+
+ <section class="mb-4">
+  <h3>Sprachen <a href="#" class="btn btn-sm btn-outline-primary">Edit</a></h3>
+  {{#each languages}}
+    <p>{{this}}</p>
+  {{/each}}
+ </section>
+
+ <section class="mb-4">
+  <h3>Themen <a href="#" class="btn btn-sm btn-outline-primary">Edit</a></h3>
+  <p><strong>Ich möchte lernen:</strong></p>
+  <ul>
+    {{#each learn}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+  <p><strong>Ich kann unterrichten:</strong></p>
+  <ul>
+    {{#each teach}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+ </section>
+
+
+<section>
+  <h3>Lernpräferenzen <a href="#" class="btn btn-sm btn-outline-primary">Edit</a></h3>
+
+  <div class="row g-3">
+    {{#each preferences}}
+      <div class="col-md-4">
+        <div class="p-3 bg-light border rounded">
+          <strong>{{title}}</strong><br>
+          {{text}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+
+  <div class="mt-4">
+    <button class="btn btn-sm btn-outline-primary">Profil speichern</button>
+  </div>
+</section>
